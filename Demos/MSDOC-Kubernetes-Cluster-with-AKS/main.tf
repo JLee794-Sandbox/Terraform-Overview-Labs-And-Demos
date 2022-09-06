@@ -33,9 +33,6 @@ resource "azurerm_log_analytics_solution" "test" {
   }
 }
 
-data "azuread_client_config" "current" {}
-
-
 resource "azurerm_kubernetes_cluster" "k8s" {
   location            = azurerm_resource_group.rg.location
   name                = var.cluster_name
