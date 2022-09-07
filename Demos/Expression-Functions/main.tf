@@ -54,7 +54,7 @@ variable "liststr1" {
 }
 variable "liststr2" {
     type    = list(string)
-    default = ["westeurope", "eastus", "japaneast"]
+    default = ["centralus", "eastus", "japaneast"]
 }
 variable "listnum1" {
     type    = list(number)
@@ -68,7 +68,7 @@ variable "setstr1" {
 }
 variable "setstr2" {
     type    = set(string)
-    default = ["westeurope", "eastus", "japaneast"]
+    default = ["centralus", "eastus", "japaneast"]
 }
 variable "setnum1" {
     type    = set(number)
@@ -82,7 +82,7 @@ variable "tuple1" {
 }
 variable "tuple2" {
     type    = tuple([string, bool, string, bool, number, string])
-    default = ["westeurope", true, "eastus", true, 33, "japaneast"]
+    default = ["centralus", true, "eastus", true, 33, "japaneast"]
 }
 
 # Map Variables

@@ -18,7 +18,7 @@ provider "azurerm" {
 # Resource Group and Storage Account
 resource "azurerm_resource_group" "HelloWorld-Basic" {
   name     = "TF-HelloWorld-rg"
-  location = "westeurope"
+  location = "centralus"
 }
 
 resource "azurerm_storage_account" "storeacc" {
