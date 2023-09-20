@@ -22,7 +22,7 @@ resource "azurerm_resource_group" "HelloWorld-Basic" {
 }
 
 resource "azurerm_storage_account" "storeacc" {
-  name                      = "jltfhelloworldbasicsa"
+  name                      = "lillyintrototfdemosa"
   resource_group_name       = azurerm_resource_group.HelloWorld-Basic.name
   location                  = azurerm_resource_group.HelloWorld-Basic.location
   account_tier              = "Standard"
