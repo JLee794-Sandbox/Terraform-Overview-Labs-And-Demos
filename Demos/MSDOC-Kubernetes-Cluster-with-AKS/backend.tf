@@ -1,6 +1,6 @@
 terraform {
   backend "local" {
-    
+
   }
   # backend "azurerm" {
   #   resource_group_name  = "bootstrap"
