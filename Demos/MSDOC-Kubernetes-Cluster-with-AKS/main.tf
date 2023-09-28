@@ -1,8 +1,8 @@
 # Generate random resource group name
 locals {
   tags = {
-    Environment = "Terraform Demo"
-    ModulePath  = path.module
+    Environment        = "Terraform Demo"
+    ModulePath         = path.module
     DeploymentIdentity = "Terraform"
   }
 }
@@ -14,6 +14,7 @@ resource "azurerm_resource_group" "rg" {
   location = var.resource_group_location
   name     = random_pet.rg_name.id
 }
+
 
 ## For TFConsole Demo purposes
 resource "azurerm_network_security_group" "this" {
@@ -48,11 +49,11 @@ resource "azurerm_virtual_network" "this" {
     name           = "pickme"
     address_prefix = "10.0.5.0/24"
   }
-  subnet {
-    name           = "andme"
-    address_prefix = "10.0.6.0/24"
-    security_group = azurerm_network_security_group.this.id
-  }
+  # subnet {
+  #   name           = "andme"
+  #   address_prefix = "10.0.6.0/24"
+  #   security_group = azurerm_network_security_group.this.id
+  # }
 
   tags = local.tags
 }

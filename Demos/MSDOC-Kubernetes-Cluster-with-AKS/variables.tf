@@ -20,7 +20,7 @@ variable "dns_prefix" {
   default = "k8stest"
 
   validation {
-    condition = regex("^k8s", var.dns_prefix)
+    condition     = regex("^k8s", var.dns_prefix)
     error_message = "DNS prefix must begin with k8s"
   }
 }
