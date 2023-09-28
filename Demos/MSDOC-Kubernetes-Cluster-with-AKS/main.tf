@@ -3,6 +3,7 @@ locals {
   tags = {
     Environment = "Terraform Demo"
     ModulePath  = path.module
+    DeploymentIdentity = "Terraform"
   }
 }
 resource "random_pet" "rg_name" {
